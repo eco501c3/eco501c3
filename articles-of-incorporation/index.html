@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>eco: ecological communities organization</title>
     <style type="text/css">
-      /* * {
-        display: block;
+      body {
+        font-family: Monospace;
+        margin: 1.5em 0;
+        padding: 0;
+        text-decoration: none;
       }
-      style,
-      title {
-        display: none;
-      } */
       li {
         display: block;
       }
@@ -22,12 +21,6 @@
       em,
       strong {
         display: inline;
-      }
-      * {
-        font-family: Monospace;
-        margin: 1.5em 0;
-        padding: 0;
-        text-decoration: none;
       }
 
       html {
@@ -67,6 +60,23 @@
 
       #project-title span {
         font-size: 0.6em;
+      }
+
+      .project {
+        overflow: hidden;
+        padding: 1rem 0;
+      }
+      .project-icon {
+        float: left;
+        width: 60px;
+      }
+      .project-icon img {
+        display: block;
+        width: 60px;
+      }
+      .project-text {
+        margin-left: 80px;
+        font-size: 1.3em;
       }
 
       #breakpoint {
@@ -141,7 +151,7 @@
           padding: 0.5rem 0;
         }
         #menu a::after {
-          content: "";
+          content: '';
         }
 
         #menu menu-directory {
